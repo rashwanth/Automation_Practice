@@ -1,4 +1,4 @@
 import subprocess
 
-result = subprocess.run(["git","status"])
+result = subprocess.run(["git","status"], capture_output=True, text=True)
 print(result)
